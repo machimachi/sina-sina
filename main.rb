@@ -1,0 +1,20 @@
+require 'sinatra'
+require 'sinatra/reloader'
+
+get '/:name' do
+
+    "hello #{params[:name]}"
+
+end
+
+get '/about/:name' do |n|
+    
+   "about 2page  #{params[:name]}"
+
+end
+
+
+get '/hello/:fname?/?:lname?' do |f,l|
+
+"hello #{f} #{l}"
+end
