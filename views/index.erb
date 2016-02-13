@@ -1,0 +1,12 @@
+<ul>
+  <!--
+  <li>ここにエントリが表示されるよ</li>
+  <li><%= @hello %></li>
+  <li><%= @rss.channel.title %></li>
+  
+  <li><a href="<%= @rss.channel.link %>"><%= @rss.channel.title %></a></li>
+  -->
+  <% @rss.items.each do |entry| %>
+  <li><a href="<%= entry.link %>"><%= entry.title %></a></li>
+<% end %>
+</ul>
