@@ -1,18 +1,3 @@
-<ul>
-  <!--
-  <li>ここにエントリが表示されるよ</li>
-  <li><%= @hello %></li>
-  <li><%= @rss.channel.title %></li>
-  -->  
-  <H1><a href="<%= @rss.channel.link %>"><%= @rss.channel.title %></a></H1>
-  
-  <% @rss.items.each do |entry| %>
-    <li><a href="<%= entry.link %>"><%= entry.title %></a></li>
-  <% end %>
-  
-  <H1><a href="<%= @rss_mmaplanet_report.channel.link %>"><%= @rss_mmaplanet_report.channel.title %></a></H1>
-  <% @rss_mmaplanet_report.items.each do |entry| %>
-    <li><a href="<%= entry.link %>"><%= entry.title %></a></li>
-  <% end %>
-  
-</ul>
+<a href="./mmantena">MMAアンテナに移動</a>
+<br>
+<a href="./page2">page2に移動</a>

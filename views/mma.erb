@@ -1,0 +1,20 @@
+<ul>
+  <!--
+  <li>ここにエントリが表示されるよ</li>
+  <li><%= @hello %></li>
+  <li><%= @rss.channel.title %></li>
+  -->
+  <H1><a href="<%= @rss.channel.link %>"><%= @rss.channel.title %></a></H1>
+
+  <% @rss.items.each do |entry| %>
+    <li><a href="<%= entry.link %>"><%= entry.title %></a></li>
+  <% end %>
+
+  <H1><a href="<%= @rss_mmaplanet_report.channel.link %>"><%= @rss_mmaplanet_report.channel.title %></a></H1>
+  <% @rss_mmaplanet_report.items.each do |entry| %>
+    <li><a href="<%= entry.link %>"><%= entry.title %></a></li>
+  <% end %>
+
+  <a href="./page2">遷移</a>
+
+</ul>
