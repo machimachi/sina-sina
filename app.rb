@@ -1,5 +1,10 @@
+#herokuにアップした際のsinatra/reloaderのエラー対策
+#require 'bundler/setup'
+#Bundler.require
+
 require 'rubygems'
 require 'sinatra'
+#require 'sinatra/reloader' if development?
 require 'sinatra/reloader'
 require 'rss'
 
